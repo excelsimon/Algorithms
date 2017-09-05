@@ -1,3 +1,4 @@
+
 #coding:utf-8
 import numpy as np
 
@@ -51,11 +52,11 @@ def LCS_recursive(x,y):
     if x[-1]==y[-1]:
         return LCS_recursive(x[:-1],y[:-1])+x[-1]
     else:
-        return max_str(LCS_recursive(x[:-1],y[-1]),LCS_recursive(x[:],y[:-1]))
+        return max_str(LCS_recursive(x[:-1],y[:]),LCS_recursive(x[:],y[:-1]))
 
 str1 = 'BCDABAB'
 str2 = 'CBAABAABA'
-#print LCS_recursive(str1,str2)
+print LCS_recursive(str1,str2)
 #CABAB
 
 def max_int(a,b):
@@ -75,7 +76,7 @@ def LCS_dynamic(x,y):
         line.append(0)
 
     for i in range(x_len+1):
-        matrix.append(line[:])
+        matrix.append(line[:])#浅拷贝害死人
     #print len(matrix),len(matrix[0])
     #矩阵零行零列填充完毕，填充矩阵剩余部分，矩阵从0行开始，矩阵第i行对应x[i-1]
     for i in range(1,x_len+1):
