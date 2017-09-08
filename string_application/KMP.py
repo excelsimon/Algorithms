@@ -54,7 +54,7 @@ def brute_force_search(text,pattern):
 #pattern[0]..pattern[h-1] == pattern[k-h]..pattern[k-1] == pattern[j-k]..pattern[j-k+h-1] == pattern[j-h]..pattern[j-1]
 #pattern[0]..pattern[h-1]....pattern[k-h]..pattern[k-1]....pattern[j-k]..pattern[j-k+h-1]....pattern[j-h]..pattern[j-1],pattern[j]
 #如果pattern[j]==pattern[h] 那么next[j+1]=h+1
-#如果pattern[j]!=pattern[h]重复上述过程，结束条件是next[h]==0
+#如果pattern[j]!=pattern[h]重复上述过程，结束条件是next[h]==-1即到第一个字符为止
 #求得next数组以后进行匹配，pattern[j]与text不匹配，next[j]=k,则text往前滑动距离为j-k即j-next[j]
 ##text: .........pattern[0],...pattern[k-1]........pattern[j-k],....pattern[j-1]..........
 #pattern:        pattern[0],...pattern[k-1]........pattern[j-k],....pattern[j-1],pattern[j]
