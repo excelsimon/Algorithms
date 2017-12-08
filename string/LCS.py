@@ -56,7 +56,7 @@ def LCS_recursive(x,y):
 
 str1 = 'BCDABAB'
 str2 = 'CBAABAABA'
-print LCS_recursive(str1,str2)
+print(LCS_recursive(str1,str2))
 #CABAB
 
 def max_int(a,b):
@@ -105,7 +105,7 @@ def LCS_dynamic(x,y):
     return matrix[x_len][y_len],result_str[::-1]
 x='ABCBDAB'
 y='BDCABA'
-print LCS_dynamic(x,y)
+print(LCS_dynamic(x,y))
 
 
 '''

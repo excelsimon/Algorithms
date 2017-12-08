@@ -38,28 +38,28 @@ class Stack(object):
 
 if __name__ == '__main__':
     stack1 = Stack(5)
-    print "The max size of stack1 is %d:" % (stack1.size,)
-    print 'before push,stack is empty?',stack1.isEmpty()
-    print "before push,stack's top is:",stack1.top
+    print("The max size of stack1 is %d:" % (stack1.size,))
+    print('before push,stack is empty?',stack1.isEmpty())
+    print("before push,stack's top is:",stack1.top)
     try:
         for i in range(10):
             stack1.push(i)
-            print 'push %d' % (i,)
+            print('push %d' % (i,))
     except:
-        print "stack is full!"
-    print 'After push %d times,stack is full?' % (i,),stack1.isFull()
-    print "After push %d times,stack's top is %d" % (i,stack1.top)
-    print 'The size of stack1 now is ',stack1.getSize()
+        print("stack is full!")
+    print('After push %d times,stack is full?' % (i,),stack1.isFull())
+    print("After push %d times,stack's top is %d" % (i,stack1.top))
+    print('The size of stack1 now is ',stack1.getSize())
 
     try:
         for i in range(10):
-            print stack1.pop()," pop"
+            print(stack1.pop()," pop")
     except:
-        print "stack is empty!"
+        print("stack is empty!")
 
-    print "After pop %d times,stack is empty?" % (i,), stack1.isEmpty()
-    print "After pop %d times,stack's top is %d" % (i,stack1.top)
-    print 'The size of stack1 now is ', stack1.getSize()
+    print("After pop %d times,stack is empty?" % (i,), stack1.isEmpty())
+    print("After pop %d times,stack's top is %d" % (i,stack1.top))
+    print('The size of stack1 now is ', stack1.getSize())
 
 
 

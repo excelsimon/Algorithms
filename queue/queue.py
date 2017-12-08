@@ -37,22 +37,22 @@ class Queue(object):
 
 if __name__ == '__main__':
     queue1 = Queue(5)
-    print 'The max size of queue1 is: ',queue1.size
-    print 'Before enqueue,the size of queue1 is:',queue1.getSize()
-    print 'Before enqueue,queue1 is empty?',queue1.isEmpty()
+    print('The max size of queue1 is: ',queue1.size)
+    print('Before enqueue,the size of queue1 is:',queue1.getSize())
+    print('Before enqueue,queue1 is empty?',queue1.isEmpty())
     try:
         for i in range(10):
-            print '%d enqueue' % (i,)
+            print('%d enqueue' % (i,))
             queue1.enqueue(i)
     except:
-        print 'queue1 is full!'
+        print('queue1 is full!')
 
-    print 'after %d times enqueue,queue is full' % (i,)
+    print('after %d times enqueue,queue is full' % (i,))
 
     try:
         for i in range(10):
-            print queue1.dequeue(),'dequeue'
+            print(queue1.dequeue(),'dequeue')
     except:
-        print 'queue1 is empty!'
+        print('queue1 is empty!')
 
-    print 'after %d times dequeue,queue is empty' % (i,)
+    print('after %d times dequeue,queue is empty' % (i,))

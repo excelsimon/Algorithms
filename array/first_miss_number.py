@@ -33,4 +33,4 @@ def first_miss_number(array):
 if __name__ == "__main__":
     array = [3,5,1,2,-3,7,4,8]
     m = first_miss_number(array)
-    print m
+    print(m)

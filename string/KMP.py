@@ -114,9 +114,9 @@ if __name__ == "__main__":
 
     text = "ababcabcdefabcabcebbeab"
     pattern = "abcabce"
-    print getNext(pattern)
-    print brute_force_search(text,pattern)
-    print kmp(text,pattern)
+    print(getNext(pattern))
+    print(brute_force_search(text,pattern))
+    print(kmp(text,pattern))
 
 
 

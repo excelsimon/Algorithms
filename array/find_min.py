@@ -26,4 +26,4 @@ def find_min(array):
 if __name__ == "__main__":
     array = [4,5,6,7,0,1,2]
     min = find_min(array)
-    print min
+    print(min)

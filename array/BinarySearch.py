@@ -27,4 +27,4 @@ if __name__ == "__main__":
     if index != -1:
         print array[index]
     else:
-        print 'Not found!'
+        print('Not found!')

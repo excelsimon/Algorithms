@@ -118,7 +118,7 @@ w = 10
 p = [5,5,3,4,3]
 g = [400,500,200,300,350]
 
-print gold_dynamic(n,w,g,p)
+print(gold_dynamic(n,w,g,p))
 
 
 

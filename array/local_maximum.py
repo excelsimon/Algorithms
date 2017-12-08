@@ -29,4 +29,4 @@ if __name__ == "__main__":
     #array = [1,3,5,7,9,11]
     array = [7,5,3,1]
     localMax = local_maximum(array)
-    print localMax
+    print(localMax)

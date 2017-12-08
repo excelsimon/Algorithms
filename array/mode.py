@@ -68,12 +68,12 @@ def Mode_2(array):
 if __name__ == "__main__":
     array1 = [8,8,1,1,1,8,1,1,6,1,8]
     m = Mode(array1)
-    print m
+    print(m)
 
     array2 = [2,2,1,3,4,2,2,1,1]
     #array2 = [1,2,3,2,5,2,2,3,3,2,3]
     mode = Mode_2(array2)
     if len(mode)>0:
-        print mode
+        print(mode)
     else:
-        print "Not Found!"
+        print("Not Found!")
