@@ -28,7 +28,7 @@ def adjust_heap(lists,i,size):
             max = rchild
         if max!=i:
             lists[i],lists[max] = lists[max],lists[i]
-            adjust_heap(lists,max,size)
+            adjust_heap(lists,max,size)  #max和i进行了调换，i已经满足，调整max，动了哪儿调整哪儿
 
 def build_heap(lists):
     size = len(lists)
